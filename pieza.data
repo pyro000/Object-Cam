@@ -1,0 +1,22 @@
+[name]
+model_name=Piezas
+
+[train-configure]
+epochs=300
+steps=150,250
+batch_size=128
+subdivisions=1
+learning_rate=0.001
+
+[model-configure]
+pre_weights=None
+classes=1
+width=352
+height=352
+anchor_num=3
+anchors=32.81,52.69, 35.53,87.03, 48.91,118.63, 52.57,58.10, 55.67,75.29, 80.92,104.38
+
+[data-configure]
+train=train.txt
+val=val.txt
+names=category.names
